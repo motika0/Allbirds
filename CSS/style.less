@@ -1,0 +1,2187 @@
+html {
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.button {
+    text-transform: uppercase;
+    border-radius: 2px;
+    border: 0px;
+    color: black;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.41px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.header {
+    background-color: white;
+    padding: 11px 0;
+    position: relative;
+
+    &__burger {
+        display: none;
+        cursor: pointer;
+
+        &-icon {
+            width: 30px;
+            height: 3px;
+            background-color: black;
+            margin: 5px 0;
+        }
+    }
+
+    &__container {
+        max-width: 1384px;
+        margin: 0 auto;
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .categories {
+        display: flex;
+        margin-top: 4px;
+        gap: 38px;
+
+        &__item {
+            text-transform: uppercase;
+            list-style: none;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 21px;
+            letter-spacing: 1.7px;
+            &:hover{
+                text-shadow: 0 0 10px rgb(0, 0, 0);
+           }
+        }
+
+        &__link {
+            text-decoration: none;
+            color: black;
+
+        }
+
+    }
+
+    &__logo {
+        display: flex;
+        margin-left: 354px;
+        margin-right: 274px;
+        transition: transform 0.3s ease;
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        &-imag {
+            height: 38px;
+        }
+    }
+
+    .management {
+        display: flex;
+        gap: 18px;
+        margin-top: 4px;
+        align-items: center;
+
+        .divides {
+            display: flex;
+            gap: 39px;
+
+            &__item {
+                text-transform: uppercase;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 21px;
+                letter-spacing: 1.7px;
+                text-align: center;
+                list-style: none;
+                &:hover{
+                    text-shadow: 0 0 10px rgb(0, 0, 0);
+               }
+            }
+
+            &__link {
+                text-decoration: none;
+                color: black;
+            }
+
+        }
+
+        .user {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+
+            &__item {
+                list-style: none;
+            }
+
+            &__link {
+                text-decoration: none;
+            }
+
+            .shopcart {
+                position: relative;
+                display: inline-block;
+
+                &__count {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-30%, -60%);
+                    color: black;
+                    padding: 5px;
+                    font-size: 12px;
+                    line-height: 1;
+                }
+            }
+        }
+
+    }
+}
+
+.main-hero {
+    width: auto;
+    height: auto;
+    background-image: url(../../images/main__banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 504px;
+    padding-bottom: 66px;
+
+    &__container {
+        max-width: 1332px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 62.88px;
+        letter-spacing: 0.5px;
+        text-align: left;
+        margin-bottom: 11px;
+        color: white;
+    }
+
+    &__slogan {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        text-align: left;
+        margin-bottom: 24px;
+        color: white;
+    }
+
+    &__button {
+        padding: 15.5px 30px;
+        background: white;
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        &:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        &[aria-label*="man"] {
+            margin-right: 20px;
+            padding-left:44px ;
+            padding-right: 44px;
+        }
+    
+    }
+
+    &__link {
+        text-decoration: none;
+    }
+}
+
+.popularcontainer {
+    max-width: 1234px;
+    margin: 0 auto;
+}
+
+.favorites {
+    padding: 119px 0 138px;
+    color: rgba(33, 42, 47, 1);
+
+    &__title {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 41.92px;
+        letter-spacing: 0.5px;
+        text-align: center;
+        margin-bottom: 21px;
+    }
+
+    .chapter {
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        &__menu {
+            display: flex;
+            gap: 90px;
+            list-style: none;
+            padding: 0;
+            margin: 0 auto;
+        }
+
+        &-item {
+            padding: 12px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 2px;
+            text-align: center;
+            transition: color 0.3s ease;
+            text-transform: uppercase;
+        }
+
+        &-item:hover {
+            font-weight: bold;
+        }
+
+
+        &__slider {
+            position: absolute;
+            bottom: 0;
+            width: 161px;
+            height: 2px;
+            background: rgba(33, 42, 47, 1);
+            transition: left 0.3s ease;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        &:nth-child(1) .shop__button {
+            margin-bottom: 12px;
+        }
+    }
+
+    &__line {
+        height: 2px;
+        width: 100%;
+        margin-bottom: 34px;
+        background: rgba(211, 212, 213, 1);
+    }
+
+    &__wrap {
+
+        &:nth-of-type(1) .shop__shoes {
+            background-image: url(../../images/gallery/wool.jpg);
+        }
+
+        &:nth-of-type(2) .shop__shoes {
+            background-image: url(../../images/gallery/tree.jpg);
+        }
+
+        &:nth-of-type(3) .shop__shoes {
+            background-image: url(../../images/gallery/mizzle.jpg);
+        }
+    }
+
+    .shop {
+        display: flex;
+        gap: 24px;
+
+        &__shoes {
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 144px 60px;
+            margin-bottom: 17px;
+        }
+
+        &__wrap {
+            padding: 0px 30px;
+
+            &-title {
+                font-size: 22px;
+                font-weight: 700;
+                line-height: 29.04px;
+                letter-spacing: 0.5px;
+                text-align: left;
+                margin-bottom: 10px;
+            }
+
+            &-line {
+                width: 336px;
+                height: 1px;
+                margin-bottom: 11px;
+                background: rgba(211, 212, 213, 1);
+            }
+
+            &-descript {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+            }
+        }
+
+
+        &__button {
+            display: block;
+padding: 17px 93px 15px 84px;
+            background: white;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+            
+        &[aria-label*="wo"] {
+            padding: 17px 80px 15px;
+
+        }
+            &:hover {
+                transform: scale(1.1);
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            }
+
+        }
+    }
+}
+
+.season {
+    &__parallax {
+        height: 542px;
+        background-image: url(../../images/seasonjpg.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 52px;
+    }
+
+    &__flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    &__title {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 41.92px;
+        letter-spacing: 0.5px;
+        margin-bottom: 54px;
+    }
+
+    &__info {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        margin-bottom: 30px;
+    }
+
+    &__wrap {
+        display: flex;
+        gap: 24px
+    }
+
+    &__link {
+        text-decoration: none;
+    }
+
+    &__button {
+        padding: 17px 31px 15px;
+        background: rgba(33, 42, 47, 1);
+        color: white;
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        &[aria-label*="man"] {
+            padding: 17px 44px 15px;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+    }
+}
+
+.collection {
+    color: rgba(33, 42, 47, 1);
+    padding: 119px 0 120px;
+
+    &__container {
+        position: relative;
+    }
+
+    &__title {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 41.92px;
+        letter-spacing: 0.5px;
+        margin-bottom: 24px;
+    }
+
+    .shop {
+        display: flex;
+        gap: 24px;
+
+        &__info {
+            margin: 14px 18px;
+        }
+        &__title {
+            font-size: 22px;
+            line-height: 29.04px;
+            letter-spacing: 0.5px;
+            margin-bottom: 10px;
+        }
+        &__description {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.5px;
+
+        }
+    }
+}
+
+
+
+.arrow {
+    display: inline-block;
+    border: solid rgba(77, 85, 89, 1);
+    padding: 11px;
+
+    &-container {
+        position: absolute;
+        display: flex;
+        gap: 1254px;
+        left: -64.5px;
+        top: 305px;  
+    }
+
+    &__wrap {
+        display: flex;
+        width: 48px;
+        height: 48px;
+        background-color: white;
+        border: 1px solid rgba(211, 212, 213, 1);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        transform: rotate(-131deg);
+        justify-content: center;
+        align-items: center;
+        transition: box-shadow 0.3s ease;
+        &:hover {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+    }
+}
+
+.left-arrow {
+    border-width: 3px 3px 0 0;
+}
+
+.right-arrow {
+    border-width: 0 0 3px 3px;
+}
+
+.nature {
+    &__parallax {
+        height: 545px;
+        background-image: url(../../images/nature.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 45px;
+    }
+
+    &__flex {
+        display: flex;
+        flex-direction: column;
+        width: 666px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 41.92px;
+        word-spacing: -3px;
+        margin-bottom: 21px;
+    }
+
+    &__info {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        margin-bottom: 27px;
+
+    }
+
+    &__button {
+        background: rgba(33, 42, 47, 1);
+        color: white;
+        margin: 0 141px;
+        padding: 16px 0px 15px;
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        &:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.new-arrivals {
+    color: rgba(33, 42, 47, 1);
+    padding: 120px 0 141px 0;
+
+    &__container {
+        position: relative;
+    }
+
+    &__title {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 41.92px;
+        word-spacing: -3px;
+        margin-bottom: 24px;
+    }
+
+    .shop {
+        display: flex;
+        gap: 24px;
+
+        &__info {
+            margin: 0 18px;
+        }
+
+        &__title {
+            font-size: 22px;
+            line-height: 29.04px;
+            word-spacing: -0.5px;
+            letter-spacing: -0.5px;
+            margin: 13px 0 10px;
+        }
+
+        &__decription {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.5px;
+
+        }
+    }
+
+    .arrivals__imag {
+        background-color: rgba(128, 128, 128, 0.1);
+    }
+}
+
+.climate {
+    color: rgba(33, 42, 47, 1);
+
+    &__image {
+        height: 542px;
+        background-image: url(../../images/climate.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 52px;
+    }
+
+    &__flex {
+        display: flex;
+        flex-direction: column;
+        width: 666px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 41.92px;
+        letter-spacing: 0.5px;
+        margin-bottom: 16px;
+    }
+
+    &__info {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        margin-bottom: 26px;
+
+    }
+
+    &__button {
+        background: rgba(33, 42, 47, 1);
+        color: white;
+        word-spacing: -0.5px;
+        padding: 17px 56px 15px 57px;
+        margin: 0 auto;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        &:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.stories {
+    color: rgba(33, 42, 47, 1);
+    padding: 120px 0 182px 0;
+
+    &__container {
+        position: relative;
+    }
+
+    &__title {
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 41.92px;
+        letter-spacing: -0.5px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        margin-bottom: 23px;
+    }
+
+    .shop {
+        display: flex;
+        gap: 24px;
+
+        &__info {
+            margin: 0 18px;
+        }
+
+        &__title {
+            font-size: 22px;
+            line-height: 29.04px;
+            letter-spacing: 0.5px;
+            margin: 13px 0 10px;
+        }
+
+        &__description {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.5;
+            text-align: left;
+        }
+    }
+
+}
+
+.form {
+
+    &__container {
+        max-width: 880px;
+        margin: 0 auto;
+    }
+
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 51px;
+    }
+
+    &__title {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 41.92px;
+        letter-spacing: 0.5px;
+        text-align: center;
+        margin-bottom: 34px;
+    }
+
+    &__description {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        text-align: center;
+
+    }
+
+    .email {
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+        margin-bottom: 22px;
+
+        &__write {
+            width: 524px;
+            height: 46px;
+            border: none;
+            border-bottom: 2px solid rgba(33, 42, 47, 1);
+            padding: 3px 0 0 68px;
+
+            &::placeholder {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 14px;
+            }
+        }
+
+        &__button {
+            background: rgba(33, 42, 47, 1);
+            color: white;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 16.41px;
+            letter-spacing: 2px;
+            text-align: center;
+            padding: 17px 20px 15px;
+            cursor: pointer;
+        }
+    }
+
+    &__note {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        color: rgba(116, 121, 124, 1);
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 46px;
+        line-height: 14px;
+        text-align: center;
+    }
+}
+
+.footer {
+    background: rgba(33, 42, 47, 1);
+    padding: 72px 0 90px;
+    color: white;
+
+    &__container {
+        max-width: 1332px;
+        margin: 0 auto;
+    }
+
+    .nav {
+        display: flex;
+        margin-bottom: 85px;
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        &__menu:nth-child(2) {
+            margin: 0 176px 0 201px;
+        }
+    }
+
+    &__item {
+        list-style: none;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 12px;
+        letter-spacing: 0.5px;
+        text-align: left;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: white;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 2px;
+        text-align: left;
+        margin-bottom: 22px;
+    }
+
+    &__offers {
+        display: flex;
+        gap: 800px;
+
+        .follow {
+            &__headline {
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 21px;
+                letter-spacing: 2px;
+                text-align: left;
+                margin-bottom: 21px;
+            }
+
+            &__paragraph {
+                width: 293px;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 18px;
+                letter-spacing: 0.5px;
+                text-align: left;
+                margin-bottom: 126px;
+            }
+        }
+    }
+
+    &__language :first-child {
+        margin-right: 20px;
+    }
+
+    &__rights {
+        display: flex;
+        justify-content: center;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0.5px;
+        text-align: center;
+
+    }
+}
+
+@media screen and (max-width:1920px) and (min-width:1440px) {
+    .header {
+        &__container {
+            max-width: 96.1vw;
+        }
+    }
+
+    .main-hero {
+        &__container {
+            max-width: 92.5vw;
+        }
+    }
+
+    .favorites {
+        .shop {
+            gap: 1.67vw;
+
+            &__shoes {
+                padding: 10vw 4.2vw;
+            }
+
+            &__button {
+                padding: 1.2vw 6.32vw 1.04vw 6.38vw;
+                &[aria-label*="wo"] {
+                    padding: 1.2vw 5.34vw 1.04vw;
+        
+                }
+            }
+        }
+
+    }
+
+    .arrow-container {
+        gap: 87vw;
+    }
+
+    .popularcontainer {
+        max-width: 85.7vw;
+    }
+
+    .shop {
+        justify-content: center;
+    }
+
+    .arrivals__imag {
+        width: 27.5vw;
+    }
+
+    .form {
+        &__container {
+            max-width: 61.1vw;
+        }
+    }
+
+    .footer {
+        &__container {
+            max-width: 92.5vw;
+        }
+
+        .nav {
+            &__menu:nth-child(2) {
+                margin: 0 12.2vw 0 14vw;
+            }
+        }
+
+        &__offers {
+            gap: 55vw;
+        }
+    }
+}
+
+@media screen and (max-width:1439px) and (min-width:1280px) {
+    .header {
+        &__container {
+            max-width: 96.1vw;
+        }
+
+        &__logo {
+
+            margin-left: 24.58vw;
+            margin-right: 11.7vw;
+
+        }
+
+        .categories {
+            &__item {
+                &:nth-child(3) {
+                    margin-right: -7.3vw;
+                }
+            }
+        }
+    }
+
+    .main-hero {
+        &__container {
+            max-width: 92.5vw;
+        }
+
+    }
+
+    .favorites {
+        &__wrap {
+            width: 27.5vw;
+        }
+        .shop{
+            &__button {
+                margin: 0 auto;
+                padding: 1.2vw 5.4vw 1.04vw;
+                &[aria-label*="wo"] {
+                    padding: 1.2vw 4.34vw 1.04vw;
+        
+                }
+            }
+        }
+
+    }
+
+    .arrow-container {
+        gap: 87vw;
+    }
+
+    .popularcontainer {
+        max-width: 85.7vw;
+    }
+
+    .shop {
+        justify-content: center;
+    }
+
+    .arrivals__imag {
+        width: 27.5vw;
+    }
+
+    .form {
+        &__container {
+            max-width: 61.1vw;
+        }
+    }
+
+    .footer {
+        &__container {
+            max-width: 92.5vw;
+        }
+
+        .nav {
+            &__menu:nth-child(2) {
+                margin: 0 12.2vw 0 14vw;
+            }
+        }
+
+        &__offers {
+            gap: 55vw;
+        }
+    }
+}
+
+@media screen and (max-width:1280px) and (min-width:1024px) {
+    .header {
+
+        &__container {
+            max-width: 96.1vw;
+        }
+
+        &__logo {
+            margin-left: 24.5vw;
+            margin-right: 8.5vw;
+        }
+
+        .categories {
+            &__item {
+                &:nth-child(3) {
+                    margin-right: -10.5vw;
+                }
+            }
+        }
+    }
+
+    .main-hero {
+        padding: 35vw 0 4.5vw;
+
+        &__container {
+            max-width: 92.5vw;
+        }
+
+        &__slogan {
+            margin-bottom: 1.67vw;
+        }
+    }
+
+    .favorites {
+        padding: 8.2vw 0 9.5vw;
+
+        &__wrap {
+            width: 27.5vw;
+        }
+
+        &__title {
+            margin-bottom: 1.6vw;
+        }
+
+        &__line {
+            margin-bottom: 2.4vw;
+        }
+
+        .shop {
+            &__button {
+                margin: 0 auto;
+                padding: 1.2vw 3.4vw 1.04vw;
+                &[aria-label*="wo"] {
+                    padding: 1.2vw 2vw 1.04vw;
+        
+                }
+            }
+
+            &__shoes {
+                background-position-x: center;
+            }
+
+            &__wrap-line {
+                width: 23.3vw;
+            }
+        }
+    }
+
+    .season {
+        &__parallax {
+            margin-bottom: 3.6vw;
+        }
+
+        &__title {
+            margin-bottom: 3.7vw;
+        }
+
+        &__info {
+            margin-bottom: 2vw;
+        }
+    }
+
+    .collection {
+        padding: 8.26vw 0 8.33vw;
+    }
+
+    .arrow-container {
+        top: 21vw;
+        gap: 87vw;
+    }
+
+    .popularcontainer {
+        max-width: 85.7vw;
+    }
+
+    .nature {
+        &__parallax {
+            margin-bottom: 3.1vw;
+        }
+
+        &__title {
+            margin-bottom: 1.5vw;
+        }
+
+        &__info {
+            margin-bottom: 1.8vw;
+        }
+    }
+
+    .new-arrivals {
+        padding: 8.3vw 0 9.7vw 0;
+    }
+
+    .climate {
+        &__image {
+            margin-bottom: 3.6vw;
+        }
+
+        &__title {
+            margin-bottom: 1.1vw;
+        }
+
+        &__info {
+            margin-bottom: 1.8vw;
+        }
+    }
+
+    .stories {
+        padding: 8.3vw 0 12vw 0;
+    }
+
+    .shop {
+        justify-content: center;
+    }
+
+    .arrivals__imag {
+        width: 27.5vw;
+    }
+
+    .form {
+        &__container {
+            max-width: 61.1vw;
+        }
+
+        &__title {
+            margin-bottom: 2.3vw;
+        }
+
+        &__wrap {
+            margin-bottom: 3.5vw;
+        }
+
+        .email {
+            margin-bottom: 1.5vw;
+
+            &__button {
+                padding: 1.1vw 1.3vw 1vw;
+            }
+        }
+    }
+
+    .footer {
+        padding: 5vw 0 6.25vw;
+
+        &__container {
+            max-width: 92.5vw;
+        }
+
+        .nav {
+            &__menu:nth-child(2) {
+                margin: 0 12.2vw 0 14vw;
+            }
+        }
+
+        &__offers {
+            gap: 53vw;
+        }
+    }
+}
+
+@media screen and (max-width:1024px) and (min-width:769px) {
+    .header {
+        &__container {
+            max-width: 96.1vw;
+        }
+
+        &__logo {
+            margin-left: 4vw;
+            margin-right: 2vw;
+        }
+
+        .categories {
+            gap: 2.6vw;
+        }
+
+        .management {
+            gap: 1.5vw;
+
+            .divides {
+                gap: 2.7vw;
+            }
+
+            .user {
+                gap: 1.3vw;
+            }
+
+        }
+
+    }
+
+    .main-hero {
+        padding: 35vw 0 4.5vw;
+
+        &__title {
+            font-size: 36px;
+            margin-bottom: 5px;
+        }
+
+        &__button {
+            padding:1.07vw 2.08vw;
+            font-size: 12px;
+            
+        &[aria-label*="man"] {
+            padding:1.07vw 3.05vw;
+        }
+        }
+
+        &__container {
+            max-width: 92.5vw;
+        }
+
+        &__slogan {
+            margin-bottom: 1.67vw;
+        }
+    }
+
+    .favorites {
+        padding: 8.2vw 0 9.5vw;
+
+
+        &__wrap {
+            width: 50vw;
+        }
+
+        &__title {
+            font-size: 28px;
+            margin-bottom: 1.4vw;
+        }
+
+        .chapter {
+            &__menu {
+                gap: 6.25vw;
+            }
+
+            &-item {
+                font-size: 14px;
+                padding-bottom: 10px;
+            }
+        }
+
+
+        &__line {
+            margin-bottom: 2.4vw;
+        }
+
+        .shop {
+            flex-direction: column;
+            align-items: center;
+
+            &__button {
+                margin: 0 auto;
+                padding: 1.2vw 3.4vw 1.04vw;
+                &[aria-label*="wo"] {
+                    padding: 1.2vw 2vw 1.04vw;
+        
+                }
+            }
+
+            &__shoes {
+                margin-bottom: 1.4vw;
+                background-position-x: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            &__wrap {
+                &-title {
+                    margin-bottom: 1vw;
+                }
+
+                &-line {
+                    width: 23.3vw;
+                    margin-bottom: 0.9px;
+                }
+
+                &-info {
+                    font-size: 14px;
+                }
+
+            }
+        }
+    }
+
+    .season {
+        &__parallax {
+            margin-bottom: 3.1vw;
+        }
+
+        &__title {
+            margin-bottom: 1.7vw;
+            font-size: 28px;
+        }
+
+        &__info {
+            margin-bottom: 1.5vw;
+            font-size: 14px;
+        }
+
+        &__button {
+padding: 1.18vw 2.15vw 1.04vw;
+            font-size: 12px;
+            &[aria-label*="man"] {
+                padding: 1.18vw 3.06vw 1.04vw;
+            }
+        }
+    }
+
+    .collection {
+        padding: 8.26vw 0 8.33vw;
+
+        &__title {
+            font-size: 28px;
+        }
+
+        .shop {
+            &__title {
+                font-size: 18px;
+            }
+
+            &__description {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .arrow {
+        padding: 5px;
+
+        &-container {
+            top: 22vw;
+            margin-left: 18px;
+            gap: 89vw;
+        }
+
+        &__wrap {
+            width: 32px;
+            height: 32px;
+        }
+    }
+
+    .popularcontainer {
+        max-width: 85.7vw;
+    }
+
+    .nature {
+        &__parallax {
+            margin-bottom: 3.1vw;
+        }
+
+        &__title {
+            margin-bottom: 1.7vw;
+            font-size: 28px;
+        }
+
+        &__info {
+            margin-bottom: 1.5vw;
+            font-size: 14px;
+        }
+
+        &__button {
+            margin: 0 9.8vw;
+            padding: 1.11vw 0px 1.05vw;
+            font-size: 12px;
+        }
+    }
+
+
+    .new-arrivals {
+        padding: 8.26vw 0 8.33vw;
+
+        &__title {
+            font-size: 28px;
+        }
+
+        .shop {
+            &__title {
+                font-size: 18px;
+            }
+
+            &__description {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .climate {
+        &__image {
+            margin-bottom: 3.1vw;
+        }
+
+        &__title {
+            margin-bottom: 1.7vw;
+            font-size: 28px;
+        }
+
+        &__info {
+            margin-bottom: 1.5vw;
+            font-size: 14px;
+        }
+
+        &__button {
+            padding: 1.2vw 3.9vw 1.04vw;
+            font-size: 12px;
+        }
+    }
+
+    .stories {
+        padding: 8.26vw 0 8.33vw;
+
+        &__title {
+            font-size: 28px;
+        }
+
+        .shop {
+            &__title {
+                font-size: 17px;
+            }
+
+            &__description {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .shop {
+        justify-content: center;
+    }
+
+    .arrivals__imag {
+        width: 27.5vw;
+    }
+
+    .form {
+        &__container {
+            max-width: 61.1vw;
+        }
+
+        &__title {
+            margin-bottom: 2.3vw;
+            font-size: 28px;
+        }
+
+        &__description {
+            font-size: 14px;
+        }
+
+        &__wrap {
+            margin-bottom: 3.5vw;
+        }
+
+        .email {
+            margin-bottom: 1.5vw;
+
+            &__write {
+                width: 34vw;
+                height: 4vw;
+                padding: 2px 0 0 4.7vw;
+
+                &::placeholder {
+                    font-size: 12px;
+                }
+            }
+
+            &__button {
+                padding: 1.1vw 1.3vw 1vw;
+                font-size: 12px;
+            }
+        }
+
+        &__note {
+            font-size: 12px;
+        }
+    }
+
+    .footer {
+        padding: 5vw 0 6.25vw;
+
+        &__container {
+            max-width: 92.5vw;
+        }
+
+        &__title {
+            margin-bottom: 18px;
+        }
+
+        .nav {
+            margin-bottom: 6vw;
+
+            &__menu:nth-child(2) {
+                margin: 0 12.2vw 0 14vw;
+            }
+
+            &__info {
+                gap: 1vw;
+            }
+        }
+
+        &__offers {
+            gap: 40vw;
+
+            .follow {
+                &__paragraph {
+                    margin-bottom: 8.5vw;
+                }
+            }
+        }
+
+        &__language :first-child {
+            margin-right: 10px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) and (min-width: 320px) {
+    .header {
+        &__burger {
+            display: block;
+        }
+
+        &__container {
+            max-width: 96.1vw;
+        }
+
+        &__logo {
+            margin-left: 24.5vw;
+            margin-right: 8.5vw;
+
+            &-imag {
+                height: 28px;
+            }
+        }
+
+        .management {
+            .divides {
+                display: none;
+            }
+
+            .user {
+                &-icon {
+                    height: 20px;
+                }
+
+                .shopcart {
+                    &__count {
+                        font-size: 8px;
+                        left: 45%;
+                    }
+                }
+            }
+        }
+
+        .categories {
+            gap: 15px;
+
+            &.active {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 45px;
+                left: 0;
+                padding-left: 1.95vw;
+                width: 98.05vw;
+                background-color: white;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            }
+
+            &__item {
+                font-size: 10px;
+
+                &:nth-child(3) {
+                    margin-right: -10.5vw;
+                }
+            }
+        }
+
+    }
+
+    .main-hero {
+        padding: 40vw 0 4.5vw;
+        display: flex;
+        flex-direction: column;
+
+        &__title {
+            font-size: 32px;
+            margin-bottom: 0px;
+            line-height: 48px;
+        }
+
+        &__buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        &__button {
+            padding:1.07vw 2.08vw;
+            font-size: 12px;
+            
+        &[aria-label*="man"] {
+            padding:1.07vw 3.05vw;
+        }
+    }
+
+        &__container {
+            max-width: 92.5vw;
+        }
+
+        &__slogan {
+            margin-bottom: 2vw;
+            font-size: 16px;
+        }
+    }
+
+    .favorites {
+        padding: 8.2vw 0 9.5vw;
+
+
+        &__wrap {
+            width: 80vw;
+        }
+
+        &__title {
+            font-size: 28px;
+            margin-bottom: 3.4vw;
+        }
+
+        .chapter {
+            &__menu {
+                display: none;
+            }
+
+            &__slider {
+                display: none;
+            }
+        }
+
+        &__line {
+            display: none;
+        }
+
+
+        .shop {
+            flex-direction: column;
+            align-items: center;
+
+            &__button {
+                margin: 0 auto;
+                padding: 1.2vw 4.2vw 1.04vw;
+                &[aria-label*="wo"] {
+                    padding: 1.2vw 2vw 1.04vw;
+        
+                }
+            }
+            &__shoes {
+                margin-bottom: 1.4vw;
+                background-position-x: center;
+                background-position-y: 80%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 10vw 60px;
+            }
+
+            &__wrap {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                &-title {
+                    margin-bottom: 1vw;
+                }
+
+                &-line {
+                    width: 25vw;
+                    margin-bottom: 0.9px;
+                }
+
+                &-info {
+                    font-size: 14px;
+                }
+
+            }
+        }
+    }
+
+    .season {
+        &__parallax {
+            height: 80vw;
+            background-position-x: 80%;
+            margin-bottom: 3.1vw;
+            background-attachment: unset;
+        }
+
+        &__title {
+            font-size: 24px;
+            margin: 0 5vw;
+            text-align: center;
+        }
+
+        &__info {
+            display: none;
+        }
+
+        &__button {
+            margin-top: 2vw;
+            padding: 1.18vw 2.15vw 1.04vw;
+            font-size: 12px;
+            &[aria-label*="man"] {
+                padding: 1.18vw 3.06vw 1.04vw;
+            }
+        }
+    }
+
+    .collection {
+        padding: 10vw 0 10vw;
+
+        &__title {
+            font-size: 24px;
+        }
+
+        .shop {
+            flex-direction: column;
+            align-items: center;
+
+            &__title {
+                font-size: 22px;
+            }
+
+            &__description {
+                font-size: 14px;
+                text-align: center;
+            }
+
+            .arrivals {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                &__imag {
+                    width: 50vw;
+                }
+            }
+
+            &__info {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+
+    .arrow-container {
+        display: none;
+        gap: 0;
+    }
+
+    .popularcontainer {
+        max-width: 85.7vw;
+    }
+
+    .nature {
+        &__parallax {
+            height: 80vw;
+            background-position-x: 50%;
+            margin-bottom: 3.1vw;
+            background-attachment: unset;
+        }
+
+        &__flex {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__title {
+            font-size: 24px;
+            text-align: center;
+            width: 80vw;
+            margin: 0 0 3vw 0;
+        }
+
+        &__info {
+            display: none;
+        }
+
+        &__button {
+            margin: 0 3.8vw;
+            padding: 1.11vw 4vw 1.05vw;
+            font-size: 12px;
+        }
+    }
+
+
+    .new-arrivals {
+        padding: 10vw 0 10vw;
+
+        &__title {
+            font-size: 24px;
+        }
+
+        .shop {
+            flex-direction: column;
+            align-items: center;
+
+            &__title {
+                font-size: 18px;
+            }
+
+            &__description {
+                font-size: 14px;
+            }
+
+            .arrivals {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                &__imag {
+                    width: 50vw;
+                }
+            }
+
+            &__info {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+
+    .stories {
+        padding: 10vw 0 10vw;
+
+        &__title {
+            font-size: 24px;
+        }
+
+        .shop {
+            flex-direction: column;
+            align-items: center;
+
+            &__title {
+                font-size: 18px;
+            }
+
+            &__description {
+                font-size: 14px;
+                text-align: center;
+            }
+
+            .arrivals {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                &__imag {
+                    width: 48vw;
+                }
+            }
+
+            &__info {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+
+    .shop {
+        justify-content: center;
+    }
+
+    .arrivals__imag {
+        width: 48vw;
+    }
+
+    .climate {
+        &__image {
+            height: 80vw;
+            margin-bottom: 3.1vw;
+        }
+
+        &__flex {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__title {
+            font-size: 24px;
+            text-align: center;
+            width: 80vw;
+            margin: 0 0 3vw 0;
+        }
+
+        &__info {
+            display: none;
+        }
+
+        &__button {
+            padding: 1.2vw 3.9vw 1.04vw;
+            font-size: 12px;
+        }
+    }
+
+    .form {
+        &__container {
+            max-width: 61.1vw;
+        }
+
+        &__title {
+            margin-bottom: 2.3vw;
+            font-size: 24px;
+        }
+
+        &__description {
+            font-size: 14px;
+        }
+
+        &__wrap {
+            margin-bottom: 3.5vw;
+        }
+
+        .email {
+            margin-bottom: 9vw;
+
+            &__write {
+                width: 34vw;
+                height: 7vw;
+                padding: 2px 0 0 4.7vw;
+
+                &::placeholder {
+                    font-size: 12px;
+                }
+            }
+
+            &__button {
+                padding: 1.1vw 1.3vw 1vw;
+                font-size: 12px;
+            }
+        }
+
+        &__note {
+            display: none;
+        }
+    }
+
+    .footer {
+        padding: 5vw 0 6.25vw;
+
+        &__container {
+            max-width: 92.5vw;
+        }
+
+        &__title {
+            margin-bottom: 12px;
+        }
+
+        .nav {
+            flex-direction: column;
+            margin-bottom: 6vw;
+
+            &__menu:nth-child(2) {
+                margin: 5vw 0;
+            }
+
+            &__info {
+                gap: 1vw;
+            }
+        }
+
+        &__offers {
+            display: none;
+        }
+
+        &__language :first-child {
+            margin-right: 10px;
+        }
+
+        &__rights {
+            letter-spacing: 0.1px;
+            margin: 1vw;
+        }
+    }
+}
+
+
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .header {
+        .categories {
+            display: none;
+        }
+    }
+
+}
+
+@media screen and (max-width: 425px) and (min-width: 320px) {
+
+    .header {
+
+        &__logo {
+            margin: 0 8vw 0 20vw;
+        }
+
+        .management {
+            .user {
+                gap: 10px;
+            }
+        }
+    }
+
+    .main-hero {
+        background-position-x:40%;
+        &__title {
+                font-size: 24px;
+            line-height: 30px;
+            margin-bottom: 5px;
+        }
+
+        &__button {
+            font-size: 12px;
+        }
+    }
+
+    .favorites {
+        &__title {
+            font-size: 22px;
+        }
+
+        .shop {
+            &__button {
+                margin: 0 auto;
+                padding: 1.2vw 5.9vw 1.04vw;
+                &[aria-label*="wo"] {
+                    padding: 1.2vw 2vw 1.04vw;
+        
+                }
+                font-size: 12px;
+            }
+
+            &__wrap {
+                display: flex;
+                flex-direction: column;
+                padding: 0;
+                text-align: center;
+
+                &-title {
+                    font-size: 18px;
+                }
+
+                &-descript {
+                    gap: 6px;
+                }
+
+            }
+        }
+    }
+
+    .season {
+        &__title {
+            font-size: 22px;
+            line-height: 32px;
+        }
+
+        &__button {
+            padding: 1.18vw 2.15vw 1.04vw;
+            font-size: 12px;
+            &[aria-label*="man"] {
+                padding: 1.18vw 3.06vw 1.04vw;
+            }
+        }
+        
+    }
+
+    .collection {
+        .shop {
+            &__title {
+                font-size: 18px;
+                text-align: center;
+            }
+        }
+    }
+
+    .nature {
+        &__title {
+            font-size: 22px;
+            line-height: 28px;
+        }
+    }
+
+    .new-arrivals {
+        .shop {
+            &__title {
+                font-size: 18px;
+                text-align: center;
+            }
+        }
+    }
+
+    .climate {
+        &__title {
+            font-size: 22px;
+            line-height: 28px;
+        }
+    }
+
+    .stories {
+        .shop {
+            &__title {
+                font-size: 18px;
+                text-align: center;
+            }
+        }
+    }
+
+    .form {
+        &__title {
+            line-height: 32px;
+        }
+
+        .email {
+            flex-direction: column;
+
+            &__write {
+                width: 56vw;
+            }
+        }
+    }
+
+    .footer {
+        &__rights {
+            margin: 0;
+            line-height: 12px;
+        }
+    }
+}
