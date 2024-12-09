@@ -155,23 +155,22 @@ html {
   margin-bottom: 24px;
   color: white;
 }
-.main-hero__button {
+.main-hero__link {
+  display: inline-block;
+  text-decoration: none;
   padding: 15.5px 30px;
   background: white;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.main-hero__button:hover {
+.main-hero__link:hover {
   transform: scale(1.1);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
-.main-hero__button[aria-label*="man"] {
+.main-hero__link[aria-label*="man"] {
   margin-right: 20px;
-  padding-left: 44px ;
+  padding-left: 44px;
   padding-right: 44px;
-}
-.main-hero__link {
-  text-decoration: none;
 }
 .popularcontainer {
   max-width: 1234px;
@@ -225,9 +224,21 @@ html {
 }
 .favorites__link {
   text-decoration: none;
+  display: inline-block;
+  padding: 17px 93px 15px 91px;
+  background: white;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.favorites__link:nth-child(1) .shop__button {
+.favorites__link:nth-of-type(1) {
   margin-bottom: 12px;
+}
+.favorites__link[aria-label*="wo"] {
+  padding: 17px 78px 15px;
+}
+.favorites__link:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 .favorites__line {
   height: 2px;
@@ -276,20 +287,6 @@ html {
   align-items: center;
   gap: 12px;
 }
-.favorites .shop__button {
-  display: block;
-  padding: 17px 93px 15px 84px;
-  background: white;
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.favorites .shop__button[aria-label*="wo"] {
-  padding: 17px 80px 15px;
-}
-.favorites .shop__button:hover {
-  transform: scale(1.1);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-}
 .season__parallax {
   height: 542px;
   background-image: url(../../images/seasonjpg.jpg);
@@ -324,18 +321,17 @@ html {
 }
 .season__link {
   text-decoration: none;
-}
-.season__button {
+  display: inline-block;
   padding: 17px 31px 15px;
   background: #212a2f;
   color: white;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.season__button[aria-label*="man"] {
+.season__link[aria-label*="man"] {
   padding: 17px 44px 15px;
 }
-.season__button:hover {
+.season__link:hover {
   transform: scale(1.1);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
@@ -435,21 +431,19 @@ html {
   letter-spacing: 0.5px;
   margin-bottom: 27px;
 }
-.nature__button {
-  background: #212a2f;
+.nature__link {
+  text-decoration: none;
   color: white;
+  display: inline-block;
+  background: #212a2f;
   margin: 0 141px;
   padding: 16px 0px 15px;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.nature__button:hover {
+.nature__link:hover {
   transform: scale(1.1);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-}
-.nature__link {
-  text-decoration: none;
-  color: white;
 }
 .new-arrivals {
   color: #212a2f;
@@ -522,21 +516,19 @@ html {
   text-decoration-skip-ink: none;
   margin-bottom: 26px;
 }
-.climate__button {
-  background: #212a2f;
-  color: white;
-  word-spacing: -0.5px;
-  padding: 17px 56px 15px 57px;
-  margin: 0 auto;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.climate__button:hover {
-  transform: scale(1.1);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-}
 .climate__link {
   text-decoration: none;
   color: white;
+  display: inline-block;
+  background: #212a2f;
+  word-spacing: -0.5px;
+  padding: 17px 60px 15px 61px;
+  margin: 0 auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.climate__link:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 .stories {
   color: #212a2f;
@@ -716,50 +708,6 @@ html {
   letter-spacing: 0.5px;
   text-align: center;
 }
-@media screen and (max-width: 1920px) and (min-width: 1440px) {
-  .header__container {
-    max-width: 96.1vw;
-  }
-  .main-hero__container {
-    max-width: 92.5vw;
-  }
-  .favorites .shop {
-    gap: 1.67vw;
-  }
-  .favorites .shop__shoes {
-    padding: 10vw 4.2vw;
-  }
-  .favorites .shop__button {
-    padding: 1.2vw 6.32vw 1.04vw 6.38vw;
-  }
-  .favorites .shop__button[aria-label*="wo"] {
-    padding: 1.2vw 5.34vw 1.04vw;
-  }
-  .arrow-container {
-    gap: 87vw;
-  }
-  .popularcontainer {
-    max-width: 85.7vw;
-  }
-  .shop {
-    justify-content: center;
-  }
-  .arrivals__imag {
-    width: 27.5vw;
-  }
-  .form__container {
-    max-width: 61.1vw;
-  }
-  .footer__container {
-    max-width: 92.5vw;
-  }
-  .footer .nav__menu:nth-child(2) {
-    margin: 0 12.2vw 0 14vw;
-  }
-  .footer__offers {
-    gap: 55vw;
-  }
-}
 @media screen and (max-width: 1439px) and (min-width: 1280px) {
   .header__container {
     max-width: 96.1vw;
@@ -774,14 +722,17 @@ html {
   .main-hero__container {
     max-width: 92.5vw;
   }
+  .favorites .shop__shoes {
+    padding: 10vw 4.7vw;
+  }
   .favorites__wrap {
     width: 27.5vw;
   }
-  .favorites .shop__button {
+  .favorites__link {
     margin: 0 auto;
     padding: 1.2vw 5.4vw 1.04vw;
   }
-  .favorites .shop__button[aria-label*="wo"] {
+  .favorites__link[aria-label*="wo"] {
     padding: 1.2vw 4.34vw 1.04vw;
   }
   .arrow-container {
@@ -841,15 +792,16 @@ html {
   .favorites__line {
     margin-bottom: 2.4vw;
   }
-  .favorites .shop__button {
+  .favorites__link {
     margin: 0 auto;
-    padding: 1.2vw 3.4vw 1.04vw;
+    padding: 1.2vw 5.4vw 1.04vw;
   }
-  .favorites .shop__button[aria-label*="wo"] {
-    padding: 1.2vw 2vw 1.04vw;
+  .favorites__link[aria-label*="wo"] {
+    padding: 1.2vw 4.15vw 1.04vw;
   }
   .favorites .shop__shoes {
     background-position-x: center;
+    padding: 10vw 0 10vw 4.7vw;
   }
   .favorites .shop__wrap-line {
     width: 23.3vw;
@@ -958,11 +910,11 @@ html {
     font-size: 36px;
     margin-bottom: 5px;
   }
-  .main-hero__button {
+  .main-hero__link {
     padding: 1.07vw 2.08vw;
     font-size: 12px;
   }
-  .main-hero__button[aria-label*="man"] {
+  .main-hero__link[aria-label*="man"] {
     padding: 1.07vw 3.05vw;
   }
   .main-hero__container {
@@ -991,16 +943,16 @@ html {
   .favorites__line {
     margin-bottom: 2.4vw;
   }
-  .favorites .shop {
-    flex-direction: column;
-    align-items: center;
-  }
-  .favorites .shop__button {
+  .favorites__link {
     margin: 0 auto;
     padding: 1.2vw 3.4vw 1.04vw;
   }
-  .favorites .shop__button[aria-label*="wo"] {
+  .favorites__link[aria-label*="wo"] {
     padding: 1.2vw 2vw 1.04vw;
+  }
+  .favorites .shop {
+    flex-direction: column;
+    align-items: center;
   }
   .favorites .shop__shoes {
     margin-bottom: 1.4vw;
@@ -1030,11 +982,11 @@ html {
     margin-bottom: 1.5vw;
     font-size: 14px;
   }
-  .season__button {
+  .season__link {
     padding: 1.18vw 2.15vw 1.04vw;
     font-size: 12px;
   }
-  .season__button[aria-label*="man"] {
+  .season__link[aria-label*="man"] {
     padding: 1.18vw 3.06vw 1.04vw;
   }
   .collection {
@@ -1075,7 +1027,7 @@ html {
     margin-bottom: 1.5vw;
     font-size: 14px;
   }
-  .nature__button {
+  .nature__link {
     margin: 0 9.8vw;
     padding: 1.11vw 0px 1.05vw;
     font-size: 12px;
@@ -1103,7 +1055,7 @@ html {
     margin-bottom: 1.5vw;
     font-size: 14px;
   }
-  .climate__button {
+  .climate__link {
     padding: 1.2vw 3.9vw 1.04vw;
     font-size: 12px;
   }
@@ -1239,11 +1191,11 @@ html {
     display: flex;
     gap: 10px;
   }
-  .main-hero__button {
+  .main-hero__link {
     padding: 1.07vw 2.08vw;
     font-size: 12px;
   }
-  .main-hero__button[aria-label*="man"] {
+  .main-hero__link[aria-label*="man"] {
     padding: 1.07vw 3.05vw;
   }
   .main-hero__container {
@@ -1272,16 +1224,16 @@ html {
   .favorites__line {
     display: none;
   }
-  .favorites .shop {
-    flex-direction: column;
-    align-items: center;
-  }
-  .favorites .shop__button {
+  .favorites__link {
     margin: 0 auto;
     padding: 1.2vw 4.2vw 1.04vw;
   }
-  .favorites .shop__button[aria-label*="wo"] {
+  .favorites__link[aria-label*="wo"] {
     padding: 1.2vw 2vw 1.04vw;
+  }
+  .favorites .shop {
+    flex-direction: column;
+    align-items: center;
   }
   .favorites .shop__shoes {
     margin-bottom: 1.4vw;
@@ -1321,12 +1273,12 @@ html {
   .season__info {
     display: none;
   }
-  .season__button {
+  .season_link {
     margin-top: 2vw;
     padding: 1.18vw 2.15vw 1.04vw;
     font-size: 12px;
   }
-  .season__button[aria-label*="man"] {
+  .season_link[aria-label*="man"] {
     padding: 1.18vw 3.06vw 1.04vw;
   }
   .collection {
@@ -1387,7 +1339,7 @@ html {
   .nature__info {
     display: none;
   }
-  .nature__button {
+  .nature__link {
     margin: 0 3.8vw;
     padding: 1.11vw 4vw 1.05vw;
     font-size: 12px;
@@ -1476,7 +1428,7 @@ html {
   .climate__info {
     display: none;
   }
-  .climate__button {
+  .climate__link {
     padding: 1.2vw 3.9vw 1.04vw;
     font-size: 12px;
   }
@@ -1561,18 +1513,18 @@ html {
     line-height: 30px;
     margin-bottom: 5px;
   }
-  .main-hero__button {
+  .main-hero__link {
     font-size: 12px;
   }
   .favorites__title {
     font-size: 22px;
   }
-  .favorites .shop__button {
+  .favorites__link {
+    font-size: 12px;
     margin: 0 auto;
     padding: 1.2vw 5.9vw 1.04vw;
-    font-size: 12px;
   }
-  .favorites .shop__button[aria-label*="wo"] {
+  .favorites__link[aria-label*="wo"] {
     padding: 1.2vw 2vw 1.04vw;
   }
   .favorites .shop__wrap {
@@ -1591,11 +1543,11 @@ html {
     font-size: 22px;
     line-height: 32px;
   }
-  .season__button {
+  .season__link {
     padding: 1.18vw 2.15vw 1.04vw;
     font-size: 12px;
   }
-  .season__button[aria-label*="man"] {
+  .season__link[aria-label*="man"] {
     padding: 1.18vw 3.06vw 1.04vw;
   }
   .collection .shop__title {
