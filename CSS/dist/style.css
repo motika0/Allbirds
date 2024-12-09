@@ -1225,9 +1225,6 @@ html {
   .header .categories__item {
     font-size: 10px;
   }
-  .header .categories__item:nth-child(3) {
-    margin-right: -10.5vw;
-  }
   .main-hero {
     padding: 40vw 0 4.5vw;
     display: flex;
