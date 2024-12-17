@@ -663,6 +663,7 @@ html {
 }
 .footer__link {
   text-decoration: none;
+  color: white;
 }
 .footer__title {
   text-transform: uppercase;
